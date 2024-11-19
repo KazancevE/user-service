@@ -9,11 +9,11 @@ import { User } from './users/user.entity';
   imports: [
     TypeOrmModule.forRoot({
       type: 'postgres',
-      host: 'localhost', // замените на ваш хост
-      port: 5432, // порт по умолчанию для PostgreSQL
-      username: 'postgres', // ваш логин
-      password: 'qwerty', // ваш пароль
-      database: 'testdb', // название базы данных
+      host: 'localhost', 
+      port: 5432, 
+      username: 'postgres',
+      password: 'qwerty',
+      database: 'testdb',
       entities: [User],
       synchronize: true,
     }),
